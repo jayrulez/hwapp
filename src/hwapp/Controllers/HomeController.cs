@@ -8,6 +8,11 @@ namespace hwapp.Controllers
 {
     public class HomeController : Controller
     {
+        public IActionResult Ip()
+        {
+            return Ok(Request.Headers);
+        }
+
         public IActionResult Index()
         {
             return View();
