@@ -15,7 +15,7 @@ namespace hwapp.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return Ok(Request.Headers);
         }
 
         public IActionResult About()
